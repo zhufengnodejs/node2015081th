@@ -1,0 +1,15 @@
+{
+  "name": "zfpxcalculator",
+  "version": "1.0.0",
+  "description": "this is calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zfpxpackage",
+    "zfpx"
+  ],
+  "author": "zfpx2015",
+  "license": "MIT"
+}
