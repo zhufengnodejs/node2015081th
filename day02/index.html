@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="file" name="myfile" id="myfile" multiple>
+<img id="showfile" src="" alt="" style="width:200px;height:200px">
+<script>
+    document.getElementById('myfile').addEventListener('change',upload,false);
+    function upload(){
+        var oData = new FormData();
+        oData.append('myfile',this.files[0]);
+        var oReq = new XMLHttpRequest();
+        oReq.open('POST','/upload',true);// 请求的方法， 请求路径 是否异步
+        oReq.onload = function(){
+            if(this.status = 200){
+                document.getElementById('showfile').src = this.responseText;//让图片的源地址等于响应的内容
+            }
+        }
+        oReq.send(oData);
+    }
+</script>
+</body>
+
+</html>

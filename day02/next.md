@@ -22,7 +22,7 @@ IPv4 地址 . . . . . . . . . . . . : 192.168.0.104
 
 ##普通网站的访问流程
 1. 在浏览器中输入一个地址，回车后浏览器会帮我们向服务器发送请求
-2.
+2. 服务器接收到客户端的请求，发回响应
 
 #url
 <img src="http://7xjf2l.com2.z0.glb.qiniucdn.com/url.jpg?name=zfpx&age=7" class="img-responsive">
