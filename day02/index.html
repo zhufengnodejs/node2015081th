@@ -14,7 +14,7 @@
         oData.append('myfile',this.files[0]);
         var oReq = new XMLHttpRequest();
         oReq.open('POST','/upload',true);// 请求的方法， 请求路径 是否异步
-        oReq.onload = function(){
+        oReq.onload = function(){//注册回调函数
             if(this.status = 200){
                 document.getElementById('showfile').src = this.responseText;//让图片的源地址等于响应的内容
             }
