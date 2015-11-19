@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function City(name){
+        this.name = name;
+        this.age = 0;
+    }
+    var cityFactory = function(name){
+        var city = new City(name);
+        return function(){
+            return city;
+        }
+    }
+    var beijing = cityFactory('北京');
+    console.log(beijing);
+
+    setTimeout(function(){
+        beijing = null;
+    },10000);
+</script>
+</html>
